@@ -23,7 +23,6 @@
 
 .page {
   width: 100%;
-  margin: 0 auto;
   background-color: #2A2C2F;
   font-family: 'Inter', Arial, sans-serif;
   color: #fff;
@@ -32,21 +31,24 @@
 }
 
 .header {
-  margin: 28px 48px 0;
+  margin: 16px 16px 0;/*margin: 28px 48px 0;*/
   display: flex;
   gap: 18px;
 }
 
 .header__logo {
   margin-right: auto;
+  width: 142px; /**/
+  height: 42px;
+  object-fit: cover;
 }
 
 .header__lang-link {
   align-self: flex-end;
   text-decoration: none;
   color: #fff;
-  font-size: 24px;
-  line-height: 38px;
+  font-size: 18px;/*24px;*/
+  line-height: 20px; /*38px;*/
   text-align: right;
 }
 
@@ -56,28 +58,34 @@
 }
 
 .lead {
-  max-width: 984px;
-  margin: 56px auto 0;
+  box-sizing: border-box;
+  width: 100%;/*max-width: 984px;*/
+  margin: 48px 0 64px;/*margin: 56px auto 0;*/
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .lead__title {
-  max-width: 800px;
+  /* max-width: 720px;
   font-size: 96px;
-  line-height: 100px;
+  line-height: 100px; */
+  max-width: 288px;
+  font-size: 40px;
+  line-height: 44px;
   font-weight: 900;
   text-align: center;
   margin: 0;
 }
 
 .lead__subtitle {
-  max-width: 640px;
+  /* max-width: 640px;
   font-size: 30px;
-  line-height: 1.2;
+  line-height: 1.2; */
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
-  margin: 32px 0 64px;
+  margin: 16px 0 40px/* margin: 32px 0 64px; */
 }
 
 .lead__image {
@@ -89,24 +97,27 @@
   line-height: 1.4;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  margin: 8px 0 0;
+  margin: 8px 16px 0; /**/
   align-self: flex-start;
 }
 
 .intro {
-  max-width: 984px;
-  margin: 92px auto;
+  /* max-width: 984px;
+  margin: 92px auto; */
+  margin: 0 16px 64px;
 }
 
 .intro__title {
-  font-size: 54px;
-  line-height: 58px;
+  /* font-size: 54px;
+  line-height: 58px; */
+  font-size: 32px;
+  line-height: 35px;
   font-weight: 900;
   margin: 0;
 }
 
 .intro__text {
-  max-width: 690px;
+  /* max-width: 690px; */
   font-size: 16px;
   line-height: 1.63;
   margin: 40px 0 33px;
@@ -130,11 +141,12 @@
 
 .photo-grid {
   display: grid;
-  gap: 16px;
-  margin: 0 48px;
-  box-sizing: border-box;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  gap: 12px; /**/
+  margin: 0 16px; /**/
+  /* grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr); */
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(12, 1fr);
 }
 
 .photo-grid__item {
@@ -143,32 +155,39 @@
   object-fit: cover;
 }
 
-
 .places {
-  max-width: 984px;
-  margin: 92px auto;
+  /* max-width: 984px;
+  margin: 92px auto; */
+  width: 100%;
+  margin: 64px 0 66px;
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 50px; /**/
 }
 
 .place {
   display: grid;
-  grid-template-columns: 460px auto;
+  /* grid-template-columns: 460px auto;
   grid-template-rows: repeat(2, auto);
   column-gap: 40px;
-  row-gap: 48px;
+  row-gap: 48px; */
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  row-gap: 32px; /**/
 }
 
 .place__title {
-  font-size: 72px;
+  /* font-size: 72px;
+  line-height: 76px; */
+  font-size: 32px;
+  line-height: 35px;
   font-weight: 900;
-  line-height: 76px;
-  margin: 0;
+  margin: 0 16px; /**/
 }
 
 .place__website {
   align-self: flex-end;
+  margin: 0 16px; /**/
 }
 
 .place__url-heading {
@@ -199,20 +218,24 @@
 .place__paragraphs {
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 25px; /**/
 }
 
 .place__paragraph {
-  font-size: 18px;
-  line-height: 29px;
-  margin: 0;
-  white-space: pre-line;
+  /* font-size: 18px;
+  line-height: 29px; */
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0 16px; /**/
+ /*  white-space: pre-line; */
 }
 
 .cover {
-  max-width: 1184px;
+  /* max-width: 1184px;
   min-height: 740px;
-  margin: 0 auto;
+  margin: 0 auto; */
+  width: 100%;
+  height: calc(100vw / 1.6);
   background-image: url(./images/cover-trains.jpg);
   background-size: cover;
   display: flex;
@@ -224,20 +247,25 @@
 }
 
 .cover__title{
-  max-width: 560px;
+ /*  max-width: 560px;
   font-size: 72px;
-  line-height: 76px;
+  line-height: 76px; */
+  font-size: 32px;
+  line-height: 35px;
   font-weight: 900;
   text-align: center;
-  margin: 0 0 32px;
+  white-space: pre-line;
+  margin: 0 16px 16px; /**/
 }
 
 .cover__subtitle {
-  max-width: 360px;
+  /* max-width: 360px;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 22px; */
+  font-size: 14px;
+  line-height: 16px;
   text-align: center;
-  margin: 0;
+  margin: 0 16px; /**/
 }
 
 .cover__overlay {
@@ -257,55 +285,216 @@
 }
 
 .footer {
-  margin: 92px 48px 24px;
+  margin: 64px 16px 24px; /**/
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  gap: 48px;
 }
 
 .footer__links {
   min-width: 465px;
   display: flex;
+  flex-direction: column;
+  gap: 32px;
   justify-content: space-between;
 }
 
 .footer__link {
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 24px;
+  line-height: 24px;
   color: #fff;
   text-decoration: none;
 }
 
 .footer__copyright {
   font-size: 14px;
-  line-height: 16px;
-  text-align: right;
+  line-height: 14px;
+  text-align: left;
   margin: 0;
 }
 
-@media (max-width: 1024px) {
+
+@media (min-width: 768px) {
+  .header {
+    margin: 28px 24px 0;
+  }
+  .header__logo {
+    width: 176px;
+    height: 52px;
+  }
+  .header__lang-link {
+    font-size: 24px;
+    line-height: 28px;
+  }
   .lead {
-    max-width: 928px;
-    margin: 48px auto 0;
+    margin: 48px 0 88px;
+  }
+  .lead__title {
+    max-width: 720px;
+    font-size: 96px;
+    line-height: 100px;
+  }
+  .lead__subtitle {
+    font-size: 30px;
+    line-height: 36px;
+    max-width: 640px;
+    margin: 32px 0 56px;
+  }
+  .lead__caption {
+    margin: 8px 24px 0;
+  }
+  .intro {
+    margin: 0 24px 88px;
+  }
+  .intro__title {
+    font-size: 54px;
+    line-height: 58px;
+  }
+  .photo-grid {
+    gap: 16px;
+    margin: 0 24px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .places {
+    margin: 88px 0px 90px;
+    gap: 73px;
+  }
+  .place {
+    grid-template-columns: 340px 1fr;
+    grid-template-rows: repeat(2, auto);
+    row-gap: 48px;
+    column-gap: 28px;
+    margin: 0 24px;
+  }
+  .place__title {
+    font-size: 42px;
+    line-height: 46px;
+    max-width: 330px;
+    margin: 0;
+  }
+  .place__website {
+    margin: 0;
+  }
+  .place__paragraph {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+  }
+  .cover__title {
+    font-size: 72px;
+    line-height: 76px;
+    margin: 0 0 32px;
+  }
+  .cover__subtitle {
+    max-width: 360px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .footer {
+    margin: 88px 24px 24px;
+    flex-direction: row;
+    gap: unset;
+  }
+  .footer__links {
+    flex-direction: row;
+    gap: 18px;
+  }
+  .footer__link {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .footer__copyright {
+    line-height: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    margin: 28px 48px 0;
+  }
+  .lead {
+    width: calc(100% - ((100% - 1024px)/(1280 - 1024)*(296 - 96) + 96px));
+    margin: 48px auto 92px;
   }
   .lead__subtitle {
     margin: 32px 0 56px;
   }
+  .lead__caption {
+    margin: 8px 0 0;
+  }
   .intro {
-    max-width: 928px;
+    width: calc(100% - ((100% - 1024px)/(1280 - 1024)*(296 - 96) + 96px));
+    margin: 0 auto 92px;
+  }
+  .intro__text {
+    max-width: 690px;
   }
   .photo-grid {
     gap: 14px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
+    margin: 0 48px;
   }
   .places {
     max-width: 928px;
+    gap: 80px;
+    margin: 92px auto;
   }
   .place {
     grid-template-columns: 440px auto;
     column-gap: 32px;
+    margin: 0;
+  }
+  .place__title {
+    font-size: 72px;
+    line-height: 76px;
+  }
+  .place__url-heading {
+    line-height: 20px;
+  }
+  .place__paragraphs {
+    gap: 26px;
+  }
+  .place__paragraph {
+    font-size: 18px;
+    line-height: 29px;
+  }
+  .footer {
+    margin: 92px 48px 24px;
+  }
+}
+
+@media (min-width: 1280px){
+  .lead {
+    max-width: 984px;
+    margin: 56px auto 92px;
+  }
+  .lead__subtitle {
+    margin: 32px 0 64px;
+  }
+  .intro {
+    max-width: 984px;
+  }
+  .photo-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .places {
+    max-width: 984px;
+  }
+  .place {
+    grid-template-columns: 460px auto;
+    column-gap: 40px;
+  }
+  .place__paragraph {
+    white-space: pre-line;
   }
   .cover {
-    min-height: 640px;
+    max-width: 1184px;
+    height: 740px;
+    margin: 0 auto;
   }
 }
