@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 48px;
+  outline-color: aquamarine;
 }
 
 @media (min-width: 768px) {

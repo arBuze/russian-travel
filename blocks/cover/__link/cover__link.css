@@ -1,16 +1,29 @@
-/* .cover {
+/* .cover__link {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-decoration: none;
+  display: inline;
+  outline-color: chocolate;
+}
+ */
+
+ .cover__link {
   width: 100%;
   min-height: calc(100vw / 1.6);
-  background-image: url(../../images/cover-trains.jpg);
+  background-image: url(../../../images/cover-trains.jpg);
   background-size: cover;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: relative;
   z-index: 1;
+  color: #fff;
   text-decoration: none;
 }
 
-.cover::after {
+.cover__link::after {
   position: absolute;
   content: "";
   background-color: #2A2C2F;
@@ -23,19 +36,14 @@
   transition: opacity .2s ease-in-out;
 }
 
-.cover:hover::after {
+.cover__link:hover::after {
   opacity: .8;
 }
 
 @media (min-width: 1280px) {
-  .cover {
+  .cover__link {
     max-width: 1184px;
     min-height: 740px;
     margin: 0 auto;
   }
 }
- */
-
- .cover {
-  outline-color: blue;
- }

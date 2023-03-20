@@ -1,13 +1,15 @@
 .footer__links {
-  min-width: 465px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 32px;
   justify-content: space-between;
+  outline-color: blueviolet;
 }
 
 @media (min-width: 768px) {
   .footer__links {
+    width: max-content;
     flex-direction: row;
     gap: 18px;
   }
